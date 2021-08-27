@@ -10,18 +10,18 @@ First install the required packages:
 
     $ cd server
 
-    $ pip install aiohttp aiortc opencv-python
+    $ pip install -r requirements.txt 
 
 When you start the example, it will create an HTTP server which you
 can connect to from your browser:
     
     $ cd server
 
-    $ python server.py
+    $ python main.py
 
 You can then browse to the following page with your browser:
 
-http://127.0.0.1:8080
+http://localhost:8080
 
 Once you click `Start` the browser will send the audio and video from its
 webcam to the server.
@@ -32,7 +32,7 @@ to the browser, optionally applying a transform to it.
 In parallel to media streams, the browser sends a 'ping' message over the data
 channel, and the server replies with 'pong'.
 
-![Server index page](./server_index.gif)
+![Server index page](server_index.gif)
 
 Additional options
 ------------------
@@ -56,7 +56,7 @@ If you have docker setup, run:
 
 You can then browse to the following page with your browser:
 
-http://127.0.0.1:8080
+http://localhost:8080
 
 
 Setting up flutter
@@ -66,7 +66,7 @@ First install the required packages.
 
 Now you will need to update the /offer path to point to your local python server.
 
-![Flutter Demo](./flutter_demo.gif)
+![Flutter Demo](flutter_demo.gif)
 
 Credits
 -------
